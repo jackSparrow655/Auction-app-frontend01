@@ -3,14 +3,14 @@ import {
   getAllPaymentProofs,
   getAllUsers,
   getMonthlyRevenue,
-} from "@/store/slices/superAdminSlice";
+} from "../../store/slices/superAdminSlice";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import AuctionItemDelete from "./sub-components/AuctionItemDelete";
 import BiddersAuctioneersGraph from "./sub-components/BiddersAuctioneersGraph";
 import PaymentGraph from "./sub-components/PaymentGraph";
 import PaymentProofs from "./sub-components/PaymentProofs";
-import Spinner from "@/custom-components/Spinner";
+import Spinner from "../../custom-components/Spinner";
 import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {

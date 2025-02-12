@@ -7,7 +7,7 @@ import { FaFacebook, FaInstagram, FaUserCircle, FaFileInvoiceDollar, FaEye } fro
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdCloseCircleOutline, IoIosCreate } from "react-icons/io";
 import { useDispatch, useSelector } from "react-redux";
-import { logout } from "@/store/slices/userSlice";
+import { logout } from "../store/slices/userSlice";
 import { Link } from "react-router-dom";
 
 const SideDrawer = () => {

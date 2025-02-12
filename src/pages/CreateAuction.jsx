@@ -1,4 +1,4 @@
-import { createAuction } from "@/store/slices/auctionSlice";
+import { createAuction } from "../store/slices/auctionSlice";
 import React, { useEffect, useState } from "react";
 import DatePicker from "react-datepicker";
 import { useDispatch, useSelector } from "react-redux";
