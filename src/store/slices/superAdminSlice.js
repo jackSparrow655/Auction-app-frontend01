@@ -181,7 +181,7 @@ export const getSinglePaymentProofDetail = (id) => async (dispatch) => {
     );
     dispatch(
       superAdminSlice.actions.successForSinglePaymentProofDetail(
-        response.data.paymentProofDetail
+        response.data.paymentProofDetails
       )
     );
   } catch (error) {

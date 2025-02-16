@@ -95,14 +95,14 @@ export const Drawer = ({ setOpenDrawer, openDrawer }) => {
       <section
         className={`fixed ${
           openDrawer && singlePaymentProof.userId ? "bottom-0" : "-bottom-full"
-        }  left-0 w-full transition-all duration-300 h-full bg-[#00000087] flex items-end`}
+        }  right-0 w-full transition-all duration-300 h-full flex items-end px-6 pt-20 lg:pl-[320px]`}
       >
-        <div className="bg-white h-fit transition-all duration-300 w-full">
-          <div className="w-full px-5 py-8 sm:max-w-[640px] sm:m-auto">
+        <div className="backdrop-blur-3xl h-fit transition-all duration-300 w-full py-5">
+          <div className="w-full px-5 py-8 sm:max-w-[640px] sm:m-auto border rounded-xl">
             <h3 className="text-[#D6482B]  text-3xl font-semibold text-center mb-1">
               Update Payment Proof
             </h3>
-            <p className="text-stone-600">
+            <p className="text-pink-100 text-xl">
               You can update payment status and amount.
             </p>
             <form className="flex flex-col gap-5 my-5">
@@ -130,7 +130,7 @@ export const Drawer = ({ setOpenDrawer, openDrawer }) => {
                 <select
                   value={status}
                   onChange={(e) => setStatus(e.target.value)}
-                  className="text-xl px-1 py-2 bg-transparent border-[1px] border-stone-600  rounded-md focus:outline-none"
+                  className="text-xl px-1 py-2 bg-richblue-400 border-[1px] border-stone-600  rounded-md focus:outline-none"
                 >
                   <option value="Pending">Pending</option>
                   <option value="Approved">Approved</option>
