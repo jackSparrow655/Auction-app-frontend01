@@ -95,7 +95,7 @@ export const Drawer = ({ setOpenDrawer, openDrawer }) => {
       <section
         className={`fixed ${
           openDrawer && singlePaymentProof.userId ? "bottom-0" : "hidden"
-        }  right-0 w-full transition-all duration-300 h-full flex items-end px-6 pt-20 lg:pl-[320px]`}
+        }  right-0 w-full transition-all duration-300 h-full flex items-end px-6 pt-20 lg:pl-[320px] z-50`}
       >
         <div className="backdrop-blur-3xl h-fit transition-all duration-300 w-full py-5">
           <div className="w-full px-5 py-8 sm:max-w-[640px] sm:m-auto border rounded-xl">
